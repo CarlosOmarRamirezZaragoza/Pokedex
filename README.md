@@ -56,5 +56,19 @@ The camera identification feature **requires** a valid Google Gemini API Key:
 4.  Run on your preferred device.
 
 ---
+**Video**
+
+
+https://github.com/user-attachments/assets/64466294-7124-4283-a8cf-d1c1b7b73598
+
+
+
+https://github.com/user-attachments/assets/5ad0c622-6180-4ef9-958b-6f4bee6ee924
+
+https://github.com/user-attachments/assets/7240bb54-f235-4a75-b513-c4685d6bce74
+
+
+
+
 **Developer:** [CORZ](https://www.linkedin.com/in/omar-ramirez-6a51b7141/)  
 **Date:** 2025-06-16
