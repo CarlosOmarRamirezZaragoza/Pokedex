@@ -1,0 +1,15 @@
+# Ocultar la carpeta web completa de las estadísticas de lenguaje
+web/** linguist-documentation
+web/**/*.html linguist-vendored
+web/**/*.js linguist-vendored
+web/**/*.css linguist-vendored
+
+# Ocultar carpetas de soporte nativo e infraestructura que puedan alterar el porcentaje
+android/** linguist-vendored
+ios/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+
+# Forzar a que todo lo que esté en la capa de negocio sea contado estrictamente como Dart
+lib/**/*.dart linguist-detectable=true
