@@ -1,0 +1,42 @@
+name: pokedex
+
+packages:
+  - .
+  - packages/**
+
+scripts:
+  build:
+    run: melos exec -- "dart run build_runner build --delete-conflicting-outputs"
+    description: "Generate code (Freezed, Injectable, etc.) across all packages."
+
+  watch:
+    run: melos exec --parallel -- "dart run build_runner watch --delete-conflicting-outputs"
+    description: "Keep build_runner listening for real-time changes across all modules."
+
+  analyze:
+    run: melos exec -- "flutter analyze"
+    description: "Run Flutter analyzer across all modules simultaneously."
+
+  clean:
+    run: melos exec -- "flutter clean"
+    description: "Clean build cache in all packages."
+
+  clean:deep:
+    run: melos exec -- "flutter clean && rm -rf pubspec.lock"
+    description: "Nuclear clean of all packages to resolve dependency conflicts."
+
+  get:
+    run: melos exec -- "flutter pub get"
+    description: "Run pub get in all packages."
+
+  test:
+    run: melos exec -- "flutter test"
+    description: "Run unit tests across the entire monorepo."
+
+  build:apk:
+    run: flutter build apk --obfuscate --split-debug-info=build/app/outputs/symbols
+    description: "Build obfuscated APK for production."
+
+  build:ipa:
+    run: flutter build ipa --obfuscate --split-debug-info=build/ios/archive/symbols
+    description: "Build obfuscated IPA for production."

@@ -1,0 +1,22 @@
+name: core_ui
+description: Design system and common widgets.
+version: 0.0.1
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shimmer: ^3.0.0
+  flutter_svg: ^2.0.9
+  lottie: ^3.0.0
+  core:
+    path: ../core
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^5.1.0
